@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 
 # [필독] 여기에 본인의 구글 시트 웹 게시(CSV) URL을 따옴표 안에 넣으세요
-SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRddSb69D6MnJFwXrsENh-MV8UsGlYYLc00Sv0KVd7N2d7T5tM740qmW1ao1gGa-k5ypGl82F9M6LDR/pub?output=csv"
+SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRddSb69D6MnJFwXrsENh-MV8UsGlYYLc00Sv0KVd7N2d7T5tM740qmW1ao1gGa-k5ypGl82F9M6LDR/pub?gid=1035469932&single=true&output=csv"
 
 def load_data():
     try:
@@ -102,4 +102,5 @@ if not df.empty:
         st.dataframe(df.sort_values(by=df.columns[0], ascending=False), use_container_width=True)
 else:
     st.error("데이터를 불러오지 못했습니다. 구글 시트의 '웹에 게시' 설정을 확인해 주세요.")
+
 
