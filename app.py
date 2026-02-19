@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 # 1. 시트 설정 (여기에 복사한 CSV URL을 넣으세요)
-SHEET_CSV_URL = "여기에_복사한_URL을_붙여넣으세요"
+SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRddSb69D6MnJFwXrsENh-MV8UsGlYYLc00Sv0KVd7N2d7T5tM740qmW1ao1gGa-k5ypGl82F9M6LDR/pub?output=csv"
 
 def load_data():
     # CSV URL을 통해 데이터를 직접 읽어옵니다.
@@ -60,4 +60,5 @@ try:
     st.dataframe(df.sort_values(by=df.columns[0], ascending=False), use_container_width=True)
 
 except Exception as e:
+
     st.error(f"데이터를 불러올 수 없습니다. URL을 확인해주세요! 에러: {e}")
