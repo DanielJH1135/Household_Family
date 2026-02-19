@@ -102,3 +102,4 @@ if not df.empty:
         st.dataframe(df.sort_values(by=df.columns[0], ascending=False), use_container_width=True)
 else:
     st.error("데이터를 불러오지 못했습니다. 구글 시트의 '웹에 게시' 설정을 확인해 주세요.")
+
