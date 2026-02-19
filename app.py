@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime
 
 # 1. 시트 주소 (이미지에 나온 URL 그대로 정확히 입력했습니다)
-SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRddSb69D6MnJFwXrsENh-MV8UsGlYYLcO0SVOOKVd7N2d7T5tM740qmW1ao1gGa-k5ypGl82F9M6LDR/pub?gid=1035469932&single=true&output=csv"
+SHEET_CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vRddSb69D6MnJFwXrsENh-MV8UsGlYYLc00Sv0KVd7N2d7T5tM740qmW1ao1gGa-k5ypGl82F9M6LDR/pub?output=csv"
 
 def load_data():
     try:
@@ -112,3 +112,4 @@ if not df.empty:
 
 else:
     st.warning("시트에 데이터가 없거나 구글에서 데이터를 쏴주지 않고 있습니다. 잠시 후 새로고침 해보세요.")
+
